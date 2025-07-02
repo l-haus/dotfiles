@@ -12,6 +12,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = "\\"
 
+-- Load plugins
 require("lazy").setup("plugins")
 
 -- UI & editing settings

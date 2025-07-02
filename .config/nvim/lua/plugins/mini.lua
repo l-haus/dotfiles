@@ -1,10 +1,11 @@
 return {
   {
     "echasnovski/mini.nvim",
+    branch = "main",
     config = function()
       require("mini.files").setup({ mappings = { show_help = 'gh' } })
       require("mini.pick").setup({})
-      -- require("mini.snippets").setup({})
+      require("mini.snippets").setup({})
       require("mini.completion").setup({})
 
       vim.keymap.set('n', '<leader>e', function() MiniFiles.open() end, {desc = 'File explorer'})
